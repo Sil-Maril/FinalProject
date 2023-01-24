@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "./reset";
+@import "./responsive";
+@import "./responsive";
+@mixin dFlex($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header-wraper {
+  height: 154px;
+}
+.wrapper {
+  @include dFlex(space-between, center);
+  height: 154px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .logo {
+    &:hover {
+      opacity: 75%;
+    }
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  .menu-ul {
+    @include dFlex(start, center);
+    column-gap: 5%;
+    li {
+      a {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -0.025em;
+        color: rgba(0, 0, 0, 0.76);
+        &:hover {
+          color: #3685fb;
+          opacity: 75%;
+        }
+      }
+    }
+  }
+  .booking1 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    background: #3685fb;
+    border-radius: 50px;
+    width: 181px;
+    height: 58px;
+    @include dFlex(center, center);
+    &:hover {
+      color: aqua;
+      opacity: 75%;
+    }
+  }
+}
+
+.main {
+  @include dFlex(space-between, center);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  column-gap: 10%;
+  h1 {
+    line-height: 96px;
+    font-weight: 700;
+    font-size: 68.385px;
+    letter-spacing: -0.025em;
+    color: #091f3f;
+  }
+  p {
+    margin-top: 5%;
+    height: 50%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+    color: #898989;
+    width: 75%;
+  }
+  .booking2 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    background: #3685fb;
+    border-radius: 50px;
+    width: 181px;
+    height: 58px;
+    @include dFlex(center, center);
+    &:hover {
+      color: aqua;
+      opacity: 75%;
+    }
+    margin-top: 10%;
+  }
+}
+
+.box-wrapper {
+  @include dFlex(center, center);
+  height: 700px;
+  background: linear-gradient(
+    to bottom,
+    #d392d6 0%,
+    #9153ab 50%,
+    #fff 50%,
+    #fff 100%
+  );
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+  background-image: url("../images/nature2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140.4%;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+.booknow {
+  @include dFlex(center, center);
+  width: 261px;
+  height: 72px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+.btn {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.025em;
+  background-image: linear-gradient(90deg, #e246ef 0%, #469eef 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.travel-wrapper {
+  @include dFlex(center, center);
+  flex-wrap: wrap;
+  margin-top: 149px;
+  flex-direction: column;
+  column-gap: 59px;
+  h3 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -0.025em;
+    color: #222222;
+    margin-bottom: 59px;
+  }
+}
+.boxes {
+  @include dFlex(space-between, center);
+  flex-wrap: wrap;
+  p {
+    @include dFlex(center, center);
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .resort {
+    background: #bc1a6e;
+    background-image: url("../images/resort.jpg");
+  }
+  .camping {
+    background: #cc2d4a;
+    background-image: url("../images/camping.jpg");
+  }
+  .beach {
+    background: #d93b30;
+    background-image: url("../images/beach.jpg");
+  }
+  .resort,
+  .beach,
+  .camping {
+    background-position: start;
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+}
+.activity-wrapper {
+  @include dFlex(center, center);
+  flex-wrap: wrap;
+  margin-top: 149px;
+  flex-direction: column;
+  column-gap: 59px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: -0.025em;
+    color: #222222;
+    margin-bottom: 59px;
+  }
+
+  .boxes {
+    @include dFlex(center, center);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    column-gap: 40px;
+    p {
+      align-items: flex-end;
+      padding-bottom: 7%;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 51px;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+    }
+
+    .box1,
+    .box2 {
+      @include dFlex(space-between, center);
+      flex-wrap: wrap;
+    }
+
+    .bridge {
+      background-image: url("../images/bridge.jpg");
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .climbing {
+      background-image: url("../images/climbing.jpg");
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .Paragliding {
+      background-image: url("../images/paragliding.jpg");
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    .baloon {
+      background-image: url("../images/baloon.jpg");
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Footer//
+
+.footer {
+  @include dFlex(center, start);
+  column-gap: 250px;
+  margin-left: 5%;
+  margin-top: 5%;
+
+  .footer-box {
+    @include dFlex(space-between, center);
+    width: 100%;
+    flex-direction: column;
+    color: #000000;
+    h4 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 50px;
+    }
+    .list-content {
+      @include dFlex(start, start);
+      column-gap: 30%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      p {
+        margin-bottom: 10%;
+      }
+    }
+  }
+  .footer-content {
+    @include dFlex(center, start);
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.025em;
+    color: black;
+    .list4 {
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.linec {
+  @include dFlex(start, start);
+  flex-direction: column;
+  height: auto;
+  column-gap: 5%;
+  margin-left: 5%;
+  .line {
+    margin-top: 5%;
+    width: 90%;
+    height: 0px;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .copyright {
+    margin-top: 5%;
+    @include dFlex(space-between, center);
+    column-gap: 5%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    width: 50%;
+  }
+}
