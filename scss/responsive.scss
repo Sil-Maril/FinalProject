@@ -35,10 +35,13 @@
     }
   }
 
-  .footer {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+  // .footer {
+  //   flex-direction: column;
+  //   flex-wrap: wrap;
+  //   .footer-box {
+  //     margin-left: 0;
+  //   }
+  // }
 
   .list-content {
     flex-direction: column;
@@ -54,5 +57,9 @@
     .main-text {
       font-size: 14px;
     }
+  }
+  .footer {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
