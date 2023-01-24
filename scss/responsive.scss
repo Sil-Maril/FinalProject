@@ -20,12 +20,13 @@
     right: 30px;
     cursor: pointer;
   }
-  .menu-ul {
-    display: none;
-  }
-  .menu-ul,
+
+  ul#menu,
   .open-menu {
     display: block;
+  }
+  ul#menu {
+    display: none;
   }
   .main {
     flex-wrap: wrap;
@@ -45,7 +46,7 @@
     flex-wrap: wrap;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 320px) {
   .main {
     img {
       width: 100%;
