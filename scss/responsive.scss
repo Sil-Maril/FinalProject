@@ -29,6 +29,10 @@
   }
   .main {
     flex-wrap: wrap;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .footer {
@@ -39,5 +43,16 @@
   .list-content {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 320px) {
+  .main {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .main-text {
+      font-size: 14px;
+    }
   }
 }
