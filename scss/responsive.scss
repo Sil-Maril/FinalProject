@@ -35,20 +35,17 @@
     }
   }
 
-  // .footer {
-  //   flex-direction: column;
-  //   flex-wrap: wrap;
-  //   .footer-box {
-  //     margin-left: 0;
-  //   }
-  // }
+  .footer {
+    flex-direction: column;
+    width: 50%;
+  }
 
   .list-content {
     flex-direction: column;
     flex-wrap: wrap;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .main {
     img {
       width: 100%;
