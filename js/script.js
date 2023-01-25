@@ -1,4 +1,5 @@
-$("#burger-menu").on("click", function(){
-    $("#menu").toggleClass("open-menu");
-
-  })
+var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+    navBar.classList.toggle('toggle');
+});
