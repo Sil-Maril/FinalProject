@@ -1,4 +1,22 @@
 @media (max-width: 768px) {
+  .wrapper {
+    .burger-icon {
+      color: purple;
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      cursor: pointer;
+    }
+    ul#menu,
+    #menu {
+      display: block;
+    }
+    ul#menu {
+      display: none;
+    }
+  }
   .wrapper,
   ul {
     display: block;
@@ -11,26 +29,10 @@
   .logo {
     text-align: left;
   }
-  .burger-icon {
-    color: #fff;
-    display: block;
-    font-size: 30px;
-    position: absolute;
-    top: 40px;
-    right: 30px;
-    cursor: pointer;
-  }
 
-  ul#menu,
-  .open-menu {
-    display: block;
-  }
-  ul#menu {
-    display: none;
-  }
   .main {
     flex-wrap: wrap;
-    // padding-inline-start: 2%;
+
     img {
       width: 100%;
       height: auto;

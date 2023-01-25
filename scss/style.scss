@@ -34,7 +34,7 @@ body {
     display: none;
   }
 
-  .menu-ul {
+  .ul-menu {
     @include dFlex(start, center);
     column-gap: 5%;
     li {
