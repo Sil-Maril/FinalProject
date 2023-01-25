@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import "./reset";
-@import "./responsive";
-@import "./responsive";
 @mixin dFlex($justifyContent, $alignItems) {
   display: flex;
   justify-content: $justifyContent;
@@ -73,6 +71,7 @@ body {
   @include dFlex(space-between, center);
   padding-top: 10%;
   padding-bottom: 10%;
+  padding-inline-start: 5%;
   column-gap: 10%;
 
   h1 {
@@ -90,7 +89,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.025em;
     color: #898989;
-    width: 75%;
+    width: 70%;
   }
   .booking2 {
     color: white;
@@ -219,7 +218,6 @@ h2 {
   flex-wrap: wrap;
   margin-top: 149px;
   flex-direction: column;
-  column-gap: 59px;
 
   h3 {
     font-weight: 600;
@@ -231,11 +229,11 @@ h2 {
   }
 
   .boxes {
-    @include dFlex(center, center);
+    @include dFlex(space-between, center);
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    column-gap: 40px;
+    // flex-direction: column;
+    // width: 100%;
+    // column-gap: 40px;
     p {
       align-items: flex-end;
       padding-bottom: 7%;
@@ -248,8 +246,10 @@ h2 {
 
     .box1,
     .box2 {
-      @include dFlex(space-between, center);
+      @include dFlex(center, center);
       flex-wrap: wrap;
+
+      width: 100%;
     }
 
     .bridge {
@@ -288,7 +288,7 @@ h2 {
   margin-top: 5%;
 
   .footer-box {
-    @include dFlex(space-between, center);
+    @include dFlex(center, center);
     width: 100%;
     flex-direction: column;
     color: #000000;
@@ -300,6 +300,7 @@ h2 {
     }
     .list-content {
       @include dFlex(start, start);
+      width: 100%;
       column-gap: 30%;
       font-weight: 400;
       font-size: 20px;
@@ -319,6 +320,9 @@ h2 {
     color: black;
     .list4 {
       margin-bottom: 5%;
+      p {
+        width: 75%;
+      }
     }
   }
 }
@@ -338,7 +342,7 @@ h2 {
   }
   .copyright {
     margin-top: 5%;
-    @include dFlex(space-between, center);
+    @include dFlex(space-between, start);
     column-gap: 5%;
     font-weight: 400;
     font-size: 20px;
@@ -347,3 +351,4 @@ h2 {
     width: 50%;
   }
 }
+@import "./responsive";
