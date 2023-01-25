@@ -1,22 +1,4 @@
 @media (max-width: 768px) {
-  .wrapper {
-    .burger-icon {
-      color: purple;
-      display: block;
-      font-size: 30px;
-      position: absolute;
-      top: 40px;
-      right: 30px;
-      cursor: pointer;
-    }
-    ul#menu,
-    #menu {
-      display: block;
-    }
-    ul#menu {
-      display: none;
-    }
-  }
   .wrapper,
   ul {
     display: block;
