@@ -5,15 +5,18 @@
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
 }
-
-body {
-  font-family: "Montserrat", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
+
 .header-wraper {
   height: 154px;
 }
@@ -23,6 +26,10 @@ body {
   width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
+  img {
+    width: 70px;
+    height: 70px;
+  }
 
   .logo {
     &:hover {
@@ -55,20 +62,20 @@ body {
     font-weight: 600;
     font-size: 20px;
     letter-spacing: -0.025em;
-    background: #3685fb;
+    background: #84167f;
     border-radius: 50px;
     width: 181px;
     height: 58px;
     @include dFlex(center, center);
     &:hover {
-      color: aqua;
+      color: #d671d1;
       opacity: 75%;
     }
   }
 }
 
 .main {
-  @include dFlex(space-between, center);
+  @include dFlex(center, center);
   padding-top: 10%;
   padding-bottom: 10%;
   padding-inline-start: 5%;
@@ -79,7 +86,7 @@ body {
     font-weight: 700;
     font-size: 68.385px;
     letter-spacing: -0.025em;
-    color: #091f3f;
+    color: #84167f;
   }
   p {
     margin-top: 5%;
@@ -90,22 +97,20 @@ body {
     letter-spacing: -0.025em;
     color: #898989;
     width: 70%;
+    margin-bottom: 10%;
   }
   .booking2 {
     color: white;
     font-weight: 600;
     font-size: 20px;
     letter-spacing: -0.025em;
-    background: #3685fb;
-    border-radius: 50px;
-    width: 181px;
-    height: 58px;
-    @include dFlex(center, center);
+    background: #84167f;
+    border-radius: 70px;
+    padding: 5%;
     &:hover {
-      color: aqua;
+      color: #d671d1;
       opacity: 75%;
     }
-    margin-top: 10%;
   }
 }
 
@@ -140,6 +145,7 @@ h2 {
   letter-spacing: -0.025em;
   color: #ffffff;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .booknow {
@@ -164,7 +170,7 @@ h2 {
 .travel-wrapper {
   @include dFlex(center, center);
   flex-wrap: wrap;
-  margin-top: 149px;
+  margin-top: 5%;
   flex-direction: column;
   column-gap: 59px;
   h3 {
@@ -172,13 +178,14 @@ h2 {
     font-size: 48px;
     line-height: 59px;
     letter-spacing: -0.025em;
-    color: #222222;
-    margin-bottom: 59px;
+    color: #84167f;
+    margin-bottom: 5%;
   }
 }
 .boxes {
   @include dFlex(space-between, center);
   flex-wrap: wrap;
+  height: 70%;
   p {
     @include dFlex(center, center);
     width: 300px;
@@ -190,33 +197,32 @@ h2 {
     letter-spacing: -0.025em;
     color: #ffffff;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
-  .resort {
-    background: #bc1a6e;
-    background-image: url("../images/resort.jpg");
-  }
-  .camping {
-    background: #cc2d4a;
-    background-image: url("../images/camping.jpg");
-  }
-  .beach {
-    background: #d93b30;
-    background-image: url("../images/beach.jpg");
-  }
+
   .resort,
   .beach,
   .camping {
+    background: #84167f;
     background-position: start;
-    background-size: 100% 40%;
+    background-size: 100% 50%;
     background-repeat: no-repeat;
     border-radius: 20px;
+  }
+  .resort {
+    background-image: url("../images/resort.jpg");
+  }
+  .camping {
+    background-image: url("../images/camping.jpg");
+  }
+  .beach {
+    background-image: url("../images/beach.jpg");
   }
 }
 .activity-wrapper {
   @include dFlex(center, center);
   flex-wrap: wrap;
-  margin-top: 149px;
+  margin-top: 5%;
   flex-direction: column;
 
   h3 {
@@ -224,16 +230,14 @@ h2 {
     font-size: 48px;
     line-height: 59px;
     letter-spacing: -0.025em;
-    color: #222222;
-    margin-bottom: 59px;
+    color: #84167f;
+    margin-bottom: 5%;
   }
 
   .boxes {
     @include dFlex(space-between, center);
     flex-wrap: wrap;
-    // flex-direction: column;
-    // width: 100%;
-    // column-gap: 40px;
+
     p {
       align-items: flex-end;
       padding-bottom: 7%;
@@ -248,34 +252,93 @@ h2 {
     .box2 {
       @include dFlex(center, center);
       flex-wrap: wrap;
-
       width: 100%;
+    }
+    .bridge,
+    .climbing,
+    .Paragliding,
+    .baloon {
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
 
     .bridge {
       background-image: url("../images/bridge.jpg");
-      background-position: center;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
     }
     .climbing {
       background-image: url("../images/climbing.jpg");
-      background-position: center;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
     }
     .Paragliding {
       background-image: url("../images/paragliding.jpg");
-      background-position: center;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
     }
     .baloon {
       background-image: url("../images/baloon.jpg");
-      background-position: center;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
     }
+  }
+}
+
+// Form
+
+form {
+  height: 100vh;
+  width: 100%;
+  .container {
+    @include dFlex(center, center);
+    flex-direction: column;
+    background-image: url("../images/Rectangle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+label {
+  padding-top: 8%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5%;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 54px;
+  @include dFlex(center, center);
+  letter-spacing: -0.025em;
+  color: #140633;
+  text-align: center;
+}
+
+.input-group {
+  width: 50%;
+  margin: 0 auto;
+  @include dFlex(center, center);
+}
+
+input[type="email"] {
+  width: 80%;
+  padding: 2%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+}
+
+input[type="submit"] {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  background: #84167f;
+  padding: 2%;
+  border: 2px solid #84167f;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover {
+    color: #d671d1;
+    opacity: 75%;
   }
 }
 
@@ -291,12 +354,19 @@ h2 {
     @include dFlex(center, center);
     width: 100%;
     flex-direction: column;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.76);
     h4 {
       font-weight: 600;
       font-size: 22px;
       line-height: 27px;
-      margin-bottom: 50px;
+      margin-bottom: 5%;
+    }
+    .list1,
+    .list2,
+    .list3 {
+      a {
+        color: rgba(0, 0, 0, 0.76);
+      }
     }
     .list-content {
       @include dFlex(start, start);
@@ -317,11 +387,13 @@ h2 {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.025em;
-    color: black;
+    color: rgba(0, 0, 0, 0.76);
+
     .list4 {
-      margin-bottom: 5%;
       p {
         width: 75%;
+        color: rgba(0, 0, 0, 0.76);
+        margin-bottom: 10%;
       }
     }
   }
@@ -330,15 +402,15 @@ h2 {
 .linec {
   @include dFlex(start, start);
   flex-direction: column;
-  height: auto;
   column-gap: 5%;
   margin-left: 5%;
+
   .line {
     margin-top: 5%;
     width: 90%;
     height: 0px;
-    border: 1px solid black;
-    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.76);
   }
   .copyright {
     margin-top: 5%;
@@ -347,8 +419,9 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.76);
     width: 50%;
+    padding-bottom: 5%;
   }
 }
 @import "./responsive";

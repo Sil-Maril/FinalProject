@@ -1,17 +1,12 @@
 .burger-menu-wrapper {
   display: none;
 }
-// .nav-bar {
-//   position: absolute;
-//   top: -100px;
-//   left: 0;
-//   transition: all 0.5s;
-// }
 
 .nav-bar {
   position: absolute;
+  display: none;
   background: linear-gradient(to bottom, #d392d6 0%, #9153ab 50%);
-  top: -100px;
+  top: -1200px;
   left: 0;
   transition: all 0.5s;
   right: 100%;
@@ -26,7 +21,7 @@
   top: 0;
 }
 .nav-bar.toggle {
-  top: 0;
+  display: block;
 }
 /* listebis gastilva */
 .nav-list-item {
@@ -75,5 +70,11 @@
 
   .burger-menu-wrapper {
     display: block;
+  }
+
+  .wrapper {
+    p {
+      display: none;
+    }
   }
 }

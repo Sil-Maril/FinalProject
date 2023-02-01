@@ -21,35 +21,20 @@
     <header class="header-wraper">
       <div class="container">
         <div class="wrapper">
-          <!-- "header-content" -->
-
-          <ul class="logo">
-            <a href="https://geolab.edu.ge/" target="_blank">
-              <img
-                src="images/logo.svg"
-                class="logo-image"
-                alt="Geolab"
-                ;
-                style="width: 70px; height: 70px"
-                ;
-              />
-            </a>
-          </ul>
+          <a class="logo" href="https://geolab.edu.ge/" target="_blank">
+            <img src="images/logo.svg" class="logo-image" alt="Geolab" />
+          </a>
           <nav class="main-nav">
             <ul id="menu" class="ul-menu">
-              <!-- "nav-desktop" -->
               <li><a class="nav-a" href="index.html">Home</a></li>
               <li><a class="nav-a" href="#about">About</a></li>
               <li><a class="nav-a" href="#experiences">Experiences</a></li>
               <li><a class="nav-a" href="#activity">Activity</a></li>
-              <li><a class="nav-a" href="#footer">Contact</a></li>
+              <li><a class="nav-a" href="#form">Contact</a></li>
               <li><a class="nav-a" href="#footer">Blog</a></li>
             </ul>
           </nav>
 
-          <!-- <div id="burger-menu" class="burger-icon">
-            <i class="fas fa-bars"></i>
-          </div> -->
           <div class="burger-menu-wrapper">
             <nav class="header__nav nav-bar">
               <div class="toggle-menu">
@@ -59,10 +44,10 @@
               </div>
               <ul class="nav-list">
                 <li class="nav-list-item">
-                  <a href="" class="nav-link">Home</a>
+                  <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-list-item">
-                  <a href="" class="nav-link">About</a>
+                  <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-list-item">
                   <a href="#experiences" class="nav-link">Experiences</a>
@@ -71,10 +56,13 @@
                   <a href="#activity" class="nav-link">Activity</a>
                 </li>
                 <li class="nav-list-item">
-                  <a href="" class="nav-link">Contact</a>
+                  <a href="#form" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-list-item">
-                  <a href="" class="nav-link">Blog</a>
+                  <a href="#footer" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="#" class="nav-link">Book Now</a>
                 </li>
               </ul>
             </nav>
@@ -138,6 +126,25 @@
       </div>
     </section>
 
+    <!-- Form -->
+
+    <form id="form">
+      <div class="container">
+        <label for="email"
+          >Enter your e-mail address and get notified of exclusive offers</label
+        >
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <input type="submit" value="Get Started" />
+        </div>
+      </div>
+    </form>
+
     <!-- FOOTER -->
 
     <footer class="container">
@@ -145,21 +152,23 @@
         <div class="footer-box">
           <div class="list-content">
             <div class="list1">
-              <h4>Support</h4>
-              <p>Help centre</p>
-              <p>Safety information</p>
-              <p>Cancellation options</p>
-              <p>Report Complaint</p>
+              <h4><a href="">Support</a></h4>
+              <p><a href="">Help centre</a></p>
+              <p><a href="">Safety information</a></p>
+              <p><a href="">Cancellation options</a></p>
+              <p><a href="">Report Complaint</a></p>
             </div>
             <div class="list2">
-              <h4>Community</h4>
-              <p>Nature Community</p>
+              <h4><a href="">Community</a></h4>
+              <p><a href="">Nature Community</a></p>
+              <p><a href="">Blog</a></p>
+              <p><a href="">Social links</a></p>
             </div>
             <div class="list3">
-              <h4>About</h4>
-              <p>Newsletter</p>
-              <p>Learn about new features</p>
-              <p>Careers</p>
+              <h4><a href="">About</a></h4>
+              <p><a href="">Newsletter</a></p>
+              <p><a href="">Learn about new features</a></p>
+              <p><a href="">Careers</a></p>
             </div>
           </div>
         </div>
@@ -168,9 +177,7 @@
             <img
               src="images/nature.svg"
               alt="naturelogo"
-              ;
               style="width: 150px; height: 90px"
-              ;
             />
           </div>
           <div class="list4">
@@ -182,7 +189,7 @@
           </div>
           <div class="social-links">
             <a href="https://facebook.com" target="_blank">
-              <img src="images/facebook.png " alt="facebook" />
+              <img src="images/facebook.svg " alt="facebook" />
             </a>
             <a href="https://twitter.com/" target="_blank">
               <img src="images/twitter.png" alt="twitter" />
